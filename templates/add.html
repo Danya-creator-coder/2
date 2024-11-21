@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Додати урок</title>
+</head>
+<body>
+    <h1>Додати новий урок</h1>
+    <form action="/add" method="post">
+        <label for="title">Назва уроку:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="description">Опис уроку:</label><br>
+        <textarea id="description" name="description"></textarea><br><br>
+
+        <label for="teacher">Ім'я викладача:</label><br>
+        <input type="text" id="teacher" name="teacher" required><br><br>
+
+        <label for="duration">Тривалість (хвилин):</label><br>
+        <input type="number" id="duration" name="duration" required><br><br>
+
+        <button type="submit">Додати</button>
+    </form>
+    <br>
+    <a href="/">На головну</a>
+</body>
+</html>
